@@ -1,6 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie'
-import animationData from '../public/lottie/main van.json'
+import animationData from '../public/lottie/mainHeader.json'
 
 function VanAnimation () {
   const defaultOptions = {

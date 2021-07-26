@@ -51,7 +51,7 @@ export default function Hero () {
               <Hidden mdDown>
                 <Typography variant='h4' gutterBottom color='textPrimary'>
                   Get Your Things Delivered{' '}
-                  <span style={{ color: '#FEB204' }}> Quickly</span> & Smart{' '}
+                  <span style={{ color: '#C8102E' }}> Quickly</span> & Smart{' '}
                 </Typography>
 
                 {/* <motion.img

@@ -1,49 +1,15 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
+import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-
+import '../styles/globals.css'
+import theme from '../src/theme'
 import { red } from '@material-ui/core/colors'
 
 export default function MyApp (props) {
   const { Component, pageProps } = props
-
-  const theme = createMuiTheme({
-    palette: {
-      primary: {
-        main: '#707070',
-        contrastText: '#fff'
-      },
-      secondary: {
-        main: '#FFF826'
-      },
-      third: {
-        main: '#FFFFFF'
-      },
-      error: {
-        main: red.A400
-      },
-      background: {
-        default: '#fff'
-      },
-
-      text: {
-        primary: '#707070',
-        secondary: '#F8F008',
-        third: '#FFFFFF'
-      }
-    },
-    typography: {
-      fontFamily: 'Poppins',
-      fontSize: 14,
-      fontWeightLight: 300,
-      fontWeightRegular: 400,
-      fontWeightMedium: 500
-    }
-  })
-
-  useEffect(() => {
+  React.useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side')
     if (jssStyles) {
@@ -52,7 +18,7 @@ export default function MyApp (props) {
   }, [])
 
   return (
-    <>
+    <React.Fragment>
       <Head>
         <title>VanGo</title>
         <meta
@@ -66,7 +32,7 @@ export default function MyApp (props) {
         <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
-    </>
+    </React.Fragment>
   )
 }
 

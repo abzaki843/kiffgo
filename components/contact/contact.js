@@ -151,7 +151,7 @@ export default function Contact () {
                   color='textPrimary'
                   align='center'
                 >
-                  Get <span style={{ color: '#FEB204' }}> In Touch</span> with
+                  Get <span style={{ color: '#C8102E' }}> In Touch</span> with
                   us
                 </Typography>
               </Grid>
@@ -165,11 +165,11 @@ export default function Contact () {
                 </Typography>
               </Grid>
             </Grid>
-
-            <Grid item xl={12} xs={10} sm={6} md={6} lg={6} xl={6}>
-              {/* <motion.div variants={containerVariants}> */}
-              <ContactAnimation />
-              {/* <motion.img
+            <Grid container directon='row'>
+              <Grid item xs={10} md={6} lg={5} xl={6}>
+                {/* <motion.div variants={containerVariants}> */}
+                <ContactAnimation />
+                {/* <motion.img
                   src='/Assets/contact-img.png'
                   style={{ width: '100%', height: 'auto', marginTop: '30px' }}
                   initial={{ x: '-100vw' }}
@@ -177,106 +177,106 @@ export default function Contact () {
                   transition={{ delay: 1, duration: 1 }}
                 />
               </motion.div> */}
+              </Grid>
+
+              <div>
+                <motion.div variants={childVariants}>
+                  <Box align='center'>
+                    <Box m={4} />
+
+                    <Grid item xs={10} md={6} lg={5} xl={6}>
+                      <form className={classes.form} noValidate>
+                        <TextField
+                          variant='outlined'
+                          margin='normal'
+                          required
+                          fullWidth
+                          id='email'
+                          label='Name'
+                          name='name'
+                          autoComplete='name'
+                          onChange={e => {
+                            setName(e.target.value)
+                          }}
+                          InputProps={{
+                            startAdornment: (
+                              <InputAdornment position='start'>
+                                <AccountCircle />
+                              </InputAdornment>
+                            )
+                          }}
+                        />
+                        <TextField
+                          variant='outlined'
+                          margin='normal'
+                          required
+                          fullWidth
+                          label='email'
+                          onChange={e => {
+                            setEmail(e.target.value)
+                          }}
+                          InputProps={{
+                            startAdornment: (
+                              <InputAdornment position='start'>
+                                <EmailIcon />
+                              </InputAdornment>
+                            )
+                          }}
+                        />
+                        <TextField
+                          variant='outlined'
+                          margin='normal'
+                          required
+                          fullWidth
+                          label='message'
+                          onChange={e => {
+                            setMessage(e.target.value)
+                          }}
+                          InputProps={{
+                            className: classes.input,
+                            startAdornment: (
+                              <InputAdornment position='start'>
+                                <MessageIcon />
+                              </InputAdornment>
+                            )
+                          }}
+                        />
+                        <Box align='left' mb={4}>
+                          <Button
+                            variant='contained'
+                            color='secondary'
+                            className={classes.submit}
+                            onClick={e => {
+                              handleSubmit(e)
+                            }}
+                          >
+                            Send us Message
+                          </Button>
+                        </Box>
+                      </form>
+                    </Grid>
+                  </Box>
+                </motion.div>
+              </div>
             </Grid>
 
-            <div>
-              <motion.div variants={childVariants}>
-                <Box align='center'>
-                  <Box mt={2} />
-
-                  <Box my={2} />
-
-                  <Grid item xs={10} md={6} lg={6} xl={6}>
-                    <form className={classes.form} noValidate>
-                      <TextField
-                        variant='outlined'
-                        margin='normal'
-                        required
-                        fullWidth
-                        id='email'
-                        label='Name'
-                        name='name'
-                        autoComplete='name'
-                        onChange={e => {
-                          setName(e.target.value)
-                        }}
-                        InputProps={{
-                          startAdornment: (
-                            <InputAdornment position='start'>
-                              <AccountCircle />
-                            </InputAdornment>
-                          )
-                        }}
-                      />
-                      <TextField
-                        variant='outlined'
-                        margin='normal'
-                        required
-                        fullWidth
-                        label='email'
-                        onChange={e => {
-                          setEmail(e.target.value)
-                        }}
-                        InputProps={{
-                          startAdornment: (
-                            <InputAdornment position='start'>
-                              <EmailIcon />
-                            </InputAdornment>
-                          )
-                        }}
-                      />
-                      <TextField
-                        variant='outlined'
-                        margin='normal'
-                        required
-                        fullWidth
-                        label='message'
-                        onChange={e => {
-                          setMessage(e.target.value)
-                        }}
-                        InputProps={{
-                          className: classes.input,
-                          startAdornment: (
-                            <InputAdornment position='start'>
-                              <MessageIcon />
-                            </InputAdornment>
-                          )
-                        }}
-                      />
-                      <Box align='left' mb={4}>
-                        <Button
-                          variant='contained'
-                          color='secondary'
-                          className={classes.submit}
-                          onClick={e => {
-                            handleSubmit(e)
-                          }}
-                        >
-                          Send us Message
-                        </Button>
-                      </Box>
-                    </form>
-                  </Grid>
-                </Box>
-              </motion.div>
-            </div>
+            <Grid container>
+              <Grid item lg={1}>
+                <img
+                  src='/Assets/footerlayer.png'
+                  style={{
+                    width: '100%',
+                    height: '40%',
+                    objectFit: 'cover',
+                    marginBottom: '-100%',
+                    marginLeft: '50px'
+                  }}
+                />
+              </Grid>
+            </Grid>
           </Grid>
         </div>
       </Box>
-      <Grid container>
-        <Grid item lg={1}>
-          <img
-            src='/Assets/footerlayer.png'
-            style={{
-              width: '100%',
-              height: '40%',
-              objectFit: 'cover',
-              marginBottom: '-110%',
-              marginLeft: '50px'
-            }}
-          />
-        </Grid>
-      </Grid>
     </motion.div>
   )
 }

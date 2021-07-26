@@ -108,7 +108,7 @@ export default function ProjectContainer () {
               >
                 <Typography variant='h4' gutterBottom color='textPrimary'>
                   <Hidden mdDown>
-                    <span style={{ color: ' #F8F008' }}> How </span> it works
+                    <span style={{ color: ' #C8102E' }}> How </span> it works
                   </Hidden>
                   <Hidden lgUp>
                     <span style={{ color: '#707070' }}> Our Projects </span>

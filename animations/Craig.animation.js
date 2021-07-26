@@ -1,6 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie'
-import animationData from '../public/lottie/craigslist.json'
+import animationData from '../public/lottie/Craigslist Delivery.json'
 
 function CraigAnimation () {
   const defaultOptions = {
@@ -12,7 +12,7 @@ function CraigAnimation () {
     }
   }
 
-  return <Lottie options={defaultOptions} height={'75%'} width={'75%'} />
+  return <Lottie options={defaultOptions} height={'100%'} width={'100%'} />
 }
 
 export default CraigAnimation

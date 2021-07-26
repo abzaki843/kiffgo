@@ -12,7 +12,7 @@ function ContactAnimation () {
     }
   }
 
-  return <Lottie options={defaultOptions} height={'75%'} width={'75%'} />
+  return <Lottie options={defaultOptions} height={'100%'} width={'100%'} />
 }
 
 export default ContactAnimation

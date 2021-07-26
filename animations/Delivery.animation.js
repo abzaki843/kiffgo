@@ -1,6 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie'
-import animationData from '../public/lottie/Delivery truck.json'
+import animationData from '../public/lottie/store Move.json'
 
 function DeliveryAnimation () {
   const defaultOptions = {

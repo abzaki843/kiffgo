@@ -29,6 +29,7 @@ import Slide from '@material-ui/core/Slide'
 import { motion } from 'framer-motion'
 import AboutUs from '../components/AboutUs/AboutUs'
 import Pwa from '../components/PWA/Pwa'
+import CardContainer from '../components/technologies/CardContainer'
 
 const pathVariants = {
   hidden: {
@@ -245,7 +246,7 @@ export default function ButtonAppBar (props) {
                       style={{ margin: '20px' }}
                       className={classes.border}
                     >
-                      How it Worls
+                      How it Works
                     </Button>
                   </Link>
                   <Link href='#contact'>
@@ -324,10 +325,10 @@ export default function ButtonAppBar (props) {
         })}
       ></main>
       <Hero />
-
+      <CardContainer />
       <AboutUs />
       <ProjectContainer />
-      <Pwa />
+      // <Pwa />
       <Contact />
       <Footer />
     </div>

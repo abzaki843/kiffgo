@@ -5,7 +5,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import Divider from '@material-ui/core/Divider'
 import { Hidden } from '@material-ui/core'
 import Box from '@material-ui/core/Box'
-
+import JoinAnimation from '../../animations/JoinUs.animation'
+import StoryAnimation from '../../animations/ourStory.animation'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 const useStyles = makeStyles({
@@ -43,7 +44,7 @@ export default function ProjectContainer () {
               <Grid container direction='row' align='center'>
                 <Grid item xs={12} lg={11} style={{ margin: 'auto' }}>
                   <Typography variant='h4' gutterBottom color='textPrimary'>
-                    <span> Our </span> Story
+                    <span> About </span> Us
                   </Typography>
                   <Typography
                     variant='subtitle2'
@@ -69,14 +70,11 @@ export default function ProjectContainer () {
           <Grid container spacing={2} align='center'>
             <Box ml={4} />
             <Grid item lg={5}>
-              <img
-                src='/Assets/team.jpg'
-                style={{ width: '100%', height: 'auto' }}
-              />
+              <StoryAnimation />
             </Grid>
             <Grid item lg={5}>
               <Typography variant='h4' gutterBottom color='textPrimary'>
-                <span> Our </span> Leaders
+                <span> Our </span> Story
               </Typography>
               <Typography variant='subtitle2' gutterBottom color='textPrimary'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -113,11 +111,8 @@ export default function ProjectContainer () {
                 Lorem Ipsum
               </Typography>
             </Grid>
-            <Grid item lg={5}>
-              <img
-                src='/Assets/careers.jpg'
-                style={{ width: '100%', height: 'auto' }}
-              />
+            <Grid item lg={6}>
+              <JoinAnimation />
             </Grid>
           </Grid>
         </Grid>
