@@ -115,12 +115,12 @@ export default function ProjectsEven ({
           >
             <Grid item lg={6}>
               <motion.div variants={containerVariants}>
-                <img src={projectImage} style={{ width: '90%' }} />
+                <img src={projectImage} style={{ width: '90%',height:"80%" }} />
               </motion.div>
             </Grid>
 
-            <Grid item xs={12} lg={6} style={{ marginTop: '50px' }}>
-              <motion.div variants={childVariants}>
+            <Grid item xs={12} lg={6} style={{ marginTop: '10%' }}>
+              <motion.div variants={containerVariants}>
                 <div>
                   <Typography
                     variant='h4'

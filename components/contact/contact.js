@@ -135,7 +135,7 @@ export default function Contact () {
             direction='row'
             alignItems='center'
             justify='center'
-            spacing={5}
+            spacing={3}
           >
             <Grid
               container
@@ -166,7 +166,7 @@ export default function Contact () {
               </Grid>
             </Grid>
             <Grid container directon='row'>
-              <Grid item xs={10} md={6} lg={5} xl={6}>
+              <Grid item xs={10} md={6} lg={5} xl={5}>
                 {/* <motion.div variants={containerVariants}> */}
                 <ContactAnimation />
                 {/* <motion.img
@@ -182,9 +182,9 @@ export default function Contact () {
               <div>
                 <motion.div variants={childVariants}>
                   <Box align='center'>
-                    <Box m={4} />
+                    <Box mt={17} />
 
-                    <Grid item xs={10} md={6} lg={5} xl={6}>
+                    <Grid item xs={10} md={6} lg={5} xl={7}>
                       <form className={classes.form} noValidate>
                         <TextField
                           variant='outlined'

@@ -92,12 +92,12 @@ export default function Pwa () {
         >
           <Grid item lg={6}>
             <motion.div variants={containerVariants}>
-              <img src='/Assets/pwa.png' style={{ width: '90%' }} />
+              <img src='/Assets/pwa.png' style={{ width: '90%'}} />
             </motion.div>
           </Grid>
 
-          <Grid item xs={12} lg={6} style={{ marginTop: '50px' }}>
-            <motion.div variants={childVariants}>
+          <Grid item xs={12} lg={6} style={{ marginTop: '5%' }}>
+            <motion.div variants={containerVariants}>
               <div>
                 <Typography
                   variant='h4'

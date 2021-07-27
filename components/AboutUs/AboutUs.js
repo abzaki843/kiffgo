@@ -44,10 +44,10 @@ export default function ProjectContainer () {
               <Grid container direction='row' align='center'>
                 <Grid item xs={12} lg={11} style={{ margin: 'auto' }}>
                   <Typography variant='h4' gutterBottom color='textPrimary'>
-                    <span> About </span> Us
+                    <span style={{ color: '#C8102E' }}> About </span> Us
                   </Typography>
                   <Typography
-                    variant='subtitle2'
+                    variant='body1'
                     gutterBottom
                     color='textPrimary'
                   >
@@ -73,10 +73,10 @@ export default function ProjectContainer () {
               <StoryAnimation />
             </Grid>
             <Grid item lg={5}>
-              <Typography variant='h4' gutterBottom color='textPrimary'>
-                <span> Our </span> Story
+              <Typography variant='h4' gutterBottom color='textPrimary'> <span> Our</span>
+                       <span  style={{ color: '#C8102E' }}>Story </span> 
               </Typography>
-              <Typography variant='subtitle2' gutterBottom color='textPrimary'>
+              <Typography variant='body1' gutterBottom color='textPrimary'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -96,9 +96,9 @@ export default function ProjectContainer () {
 
             <Grid item lg={5}>
               <Typography variant='h4' gutterBottom color='textPrimary'>
-                <span> Work </span> with us
+                <span  style={{ color: '#C8102E' }} > Work </span> with us
               </Typography>
-              <Typography variant='subtitle2' gutterBottom color='textPrimary'>
+              <Typography variant='body1' gutterBottom color='textPrimary'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
