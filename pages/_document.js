@@ -11,10 +11,8 @@ export default class MyDocument extends Document {
         <Head>
           <title>VanGo</title>
           <link rel='icon' href='/favicon.ico' />
-          <link
-            rel='stylesheet'
-            href='https://fonts.googleapis.com/css?family=Poppins'
-          />
+        
+        
         </Head>
         <body>
           <Main />
